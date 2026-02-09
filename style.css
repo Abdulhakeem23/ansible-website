@@ -1,0 +1,68 @@
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-main: #f8fafc;
+    --accent-color: #38bdf8;
+    --success-green: #22c55e;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+}
+
+.status-badge {
+    background-color: rgba(34, 197, 94, 0.2);
+    color: var(--success-green);
+    border: 1px solid var(--success-green);
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+p { color: #94a3b8; }
+
+.card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    border: 1px solid #334155;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.stats-card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-bottom: 4px solid var(--accent-color);
+}
+
+.highlight {
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+footer { margin-top: 3rem; font-size: 0.8rem; opacity: 0.6; }
